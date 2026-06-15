@@ -57,7 +57,7 @@ export default function Process() {
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#1A1A1A]">
             4주 안정화 프로세스
           </h2>
-          <p className="mt-4 text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-500 font-serif font-light text-base sm:text-lg max-w-2xl mx-auto">
             일마레의 검증된 인수 표준이 매장을 단계적으로 안정화합니다.
             <br className="hidden sm:block" />
             감이 아닌 체크리스트와 데이터로 운영합니다.

@@ -74,7 +74,7 @@ export default function Contact() {
               <br />
               상담을 신청하세요
             </h2>
-            <p className="mt-5 text-gray-600 text-base leading-relaxed">
+            <p className="mt-5 text-gray-600 font-serif font-light text-base leading-relaxed">
               매장 상황을 말씀해 주시면, 일마레 팀이 직접 연락드려 구체적인 위탁운영 방안을 제안합니다.
               <br />
               <strong className="text-[#1A1A1A]">상담은 완전 무료</strong>입니다.

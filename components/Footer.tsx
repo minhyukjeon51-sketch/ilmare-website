@@ -73,7 +73,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-gray-500 text-xs">
-            © 2025 일마레 F&B 위탁운영. All rights reserved.
+            © 2026 일마레 F&B 위탁운영. All rights reserved.
           </p>
           <div className="flex gap-4 text-xs text-gray-500">
             <a href="#" className="hover:text-gray-300">개인정보처리방침</a>

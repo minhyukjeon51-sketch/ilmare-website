@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
 
         {/* Brand slogan line */}
-        <p className="text-[#C8865A] text-sm tracking-[0.28em] uppercase font-medium mb-6 opacity-90">
+        <p className="text-[#C8865A] text-sm tracking-[0.28em] uppercase font-serif font-light mb-6 opacity-90">
           fine team. fine dining.
         </p>
 
@@ -49,7 +49,7 @@ export default function Hero() {
         </h1>
 
         {/* Sub Headline */}
-        <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-base sm:text-lg md:text-xl text-white/70 font-serif font-light max-w-2xl mx-auto mb-12 leading-relaxed">
           1998년부터 이어온 일마레의 운영 시스템을 파트너와 공유합니다.
           <br className="hidden sm:block" />
           가맹 창업과 위탁운영, 두 갈래 길을 한 번의 상담으로 비교해 보세요.
@@ -59,20 +59,20 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="w-full sm:w-auto bg-[#C8865A] hover:bg-[#b07048] text-white font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-lg hover:shadow-[#C8865A]/30 hover:-translate-y-0.5"
+            className="w-full sm:w-auto bg-[#C8865A] hover:bg-[#b07048] text-white font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-lg hover:shadow-[#C8865A]/30 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           >
             무료 상담 신청하기
           </a>
           <a
             href="#services"
-            className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all backdrop-blur-sm"
+            className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
           >
             서비스 알아보기
           </a>
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-6 text-white/40 text-sm">
+        <div className="mt-16 flex flex-wrap items-center justify-center gap-6 text-white/65 text-sm">
           <span className="flex items-center gap-1.5">
             <svg className="w-4 h-4 text-[#C8865A]" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />

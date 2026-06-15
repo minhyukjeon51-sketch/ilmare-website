@@ -77,6 +77,8 @@ export default function Navigation() {
           className="md:hidden p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? '메뉴 닫기' : '메뉴'}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           <div className="relative w-6 h-5">
             <span
@@ -100,6 +102,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       <div
+        id="mobile-menu"
         className={`md:hidden bg-white border-t border-gray-100 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}

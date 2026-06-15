@@ -73,7 +73,7 @@ export default function Services() {
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#1A1A1A]">
             위탁운영, 이렇게 다릅니다
           </h2>
-          <p className="mt-4 text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-500 font-serif font-light text-base sm:text-lg max-w-2xl mx-auto">
             단순 컨설팅이 아닙니다. 일마레가 직접 운영에 참여하여
             <br className="hidden sm:block" />
             매장의 모든 영역을 책임집니다.

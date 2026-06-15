@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['Pretendard', 'Apple SD Gothic Neo', 'sans-serif'],
+        serif: ['"Noto Serif KR"', 'serif'],
       },
     },
   },

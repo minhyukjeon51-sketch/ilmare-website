@@ -20,10 +20,10 @@ export default function CTABanner() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
           지금 매장이 힘드신가요?
         </h2>
-        <p className="text-white/80 text-lg sm:text-xl mb-3">
+        <p className="text-white/80 font-serif font-light text-lg sm:text-xl mb-3">
           혼자 감당하지 마세요. 일마레가 함께합니다.
         </p>
-        <p className="text-white/60 text-base max-w-xl mx-auto mb-10">
+        <p className="text-white/60 font-serif font-light text-base max-w-xl mx-auto mb-10">
           상담은 무료입니다. 매장 상황을 말씀해 주시면
           구체적인 운영 개선 방안을 제안드립니다.
         </p>
@@ -55,6 +55,9 @@ export default function CTABanner() {
             src={`${basePath}/images/food-pizza.jpg`}
             alt="피자"
             className="w-full h-full object-cover opacity-80"
+            width={600}
+            height={128}
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/20" />
           <span className="absolute bottom-2 left-3 text-white text-xs font-semibold">
@@ -66,6 +69,9 @@ export default function CTABanner() {
             src={`${basePath}/images/food-dessert.jpg`}
             alt="디저트"
             className="w-full h-full object-cover opacity-80"
+            width={600}
+            height={128}
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/20" />
           <span className="absolute bottom-2 left-3 text-white text-xs font-semibold">

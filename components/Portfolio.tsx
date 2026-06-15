@@ -64,7 +64,7 @@ export default function Portfolio() {
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#1A1A1A]">
             운영 중인 매장들
           </h2>
-          <p className="mt-4 text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-500 font-serif font-light text-base sm:text-lg max-w-2xl mx-auto">
             브런치 카페부터 올데이 다이닝까지, 다양한 업태에서
             일마레의 시스템이 검증되었습니다.
           </p>

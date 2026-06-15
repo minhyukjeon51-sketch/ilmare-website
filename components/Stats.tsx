@@ -21,7 +21,7 @@ export default function Stats() {
               <div className="text-[#1A1A1A] font-semibold text-sm sm:text-base mb-1">
                 {stat.label}
               </div>
-              <div className="text-gray-400 text-xs leading-tight">{stat.desc}</div>
+              <div className="text-gray-500 text-xs leading-tight">{stat.desc}</div>
             </div>
           ))}
         </div>

@@ -56,7 +56,7 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-gray-600 text-sm leading-relaxed flex-1 mb-5">
+              <blockquote className="text-gray-600 font-serif font-light text-sm leading-relaxed flex-1 mb-5">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
 

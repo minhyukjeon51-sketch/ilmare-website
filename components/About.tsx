@@ -33,11 +33,11 @@ export default function About() {
               <br />
               일마레가 다릅니다
             </h2>
-            <p className="mt-6 text-gray-600 text-base sm:text-lg leading-relaxed">
+            <p className="mt-6 text-gray-600 font-serif font-light text-base sm:text-lg leading-relaxed">
               일마레(Il Mare)는 &apos;그 바다&apos;라는 뜻입니다. 흔들리지 않는 바다처럼, 어떤
               상황에서도 매장 운영의 중심을 잡는다는 철학을 담았습니다.
             </p>
-            <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
+            <p className="mt-4 text-gray-600 font-serif font-light text-base sm:text-lg leading-relaxed">
               단순 컨설팅이 아닙니다. 우리가 직접 들어가 운영합니다. 헤드셰프부터 홀 매니저까지,
               검증된 인력과 SOP 시스템으로 4주 안에 매장을 안정화시킵니다.
             </p>
@@ -72,6 +72,9 @@ export default function About() {
                   src={`${basePath}/images/food-pasta.jpg`}
                   alt="시그니처 파스타"
                   className="w-full h-full object-cover"
+                  width={400}
+                  height={144}
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <span className="absolute bottom-2 left-3 text-white text-xs font-semibold tracking-wide">
@@ -83,6 +86,9 @@ export default function About() {
                   src={`${basePath}/images/food-table.jpg`}
                   alt="다이닝 공간"
                   className="w-full h-full object-cover"
+                  width={400}
+                  height={144}
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <span className="absolute bottom-2 left-3 text-white text-xs font-semibold tracking-wide">
