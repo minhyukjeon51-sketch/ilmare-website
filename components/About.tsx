@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+
 const values = [
   {
     icon: '🎯',
@@ -61,8 +63,34 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right: Values */}
+          {/* Right: Food images + Values */}
           <div className="space-y-5">
+            {/* Food image showcase */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative h-36 rounded-2xl overflow-hidden shadow-md">
+                <img
+                  src={`${basePath}/images/food-pasta.jpg`}
+                  alt="시그니처 파스타"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-2 left-3 text-white text-xs font-semibold tracking-wide">
+                  시그니처 파스타
+                </span>
+              </div>
+              <div className="relative h-36 rounded-2xl overflow-hidden shadow-md">
+                <img
+                  src={`${basePath}/images/food-table.jpg`}
+                  alt="다이닝 공간"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-2 left-3 text-white text-xs font-semibold tracking-wide">
+                  다이닝 공간
+                </span>
+              </div>
+            </div>
+
             {values.map((v, i) => (
               <div
                 key={i}

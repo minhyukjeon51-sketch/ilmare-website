@@ -1,15 +1,25 @@
 export default function Hero() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #1A1A1A 0%, #2D2010 50%, #3D2415 100%)',
+        backgroundImage: `url(${basePath}/images/hero-bg.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
-      {/* Background pattern */}
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/55" />
+      {/* Brand tone overlay */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-60"
+        style={{ background: 'linear-gradient(135deg, #1A1A1A 0%, #2D2010 50%, #3D2415 100%)' }}
+      />
+      {/* Subtle dot pattern */}
+      <div
+        className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, #C8865A 1px, transparent 0)`,
           backgroundSize: '40px 40px',

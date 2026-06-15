@@ -1,4 +1,5 @@
 export default function CTABanner() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
   return (
     <section
       className="py-20 relative overflow-hidden"
@@ -45,6 +46,32 @@ export default function CTABanner() {
         <p className="mt-6 text-white/40 text-sm">
           평일 10:00–18:00 운영 · 토요일 오전 상담 가능
         </p>
+      </div>
+
+      {/* Food image strip */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 mt-12 grid grid-cols-2 gap-3">
+        <div className="relative h-32 rounded-2xl overflow-hidden">
+          <img
+            src={`${basePath}/images/food-pizza.jpg`}
+            alt="피자"
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-black/20" />
+          <span className="absolute bottom-2 left-3 text-white text-xs font-semibold">
+            시그니처 피자
+          </span>
+        </div>
+        <div className="relative h-32 rounded-2xl overflow-hidden">
+          <img
+            src={`${basePath}/images/food-dessert.jpg`}
+            alt="디저트"
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-black/20" />
+          <span className="absolute bottom-2 left-3 text-white text-xs font-semibold">
+            시그니처 디저트
+          </span>
+        </div>
       </div>
     </section>
   )

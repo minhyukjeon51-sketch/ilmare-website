@@ -1,19 +1,21 @@
 const stores = [
   {
     name: '브런치 카페 A',
-    type: '브런치 카페',
+    type: 'Grand Kitchen 모델',
     location: '서울 마포구',
     tags: ['아침·점심 특화', '테이크아웃'],
     result: '인수 4주 후 매출 +35%',
     bg: '#C8865A',
+    image: '/images/store-grand.jpg',
   },
   {
     name: '올데이 다이닝 B',
-    type: '올데이 다이닝',
+    type: 'Bistro 모델',
     location: '서울 성동구',
     tags: ['파스타·에그', '평일 오피스 타운'],
     result: '원가율 38% → 27% 개선',
     bg: '#8B6454',
+    image: '/images/store-bistro.jpg',
   },
   {
     name: '브런치 바이 C',
@@ -50,6 +52,7 @@ const stores = [
 ]
 
 export default function Portfolio() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
   return (
     <section id="portfolio" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -76,17 +79,27 @@ export default function Portfolio() {
             >
               {/* Color banner */}
               <div
-                className="h-28 relative flex items-center justify-center"
-                style={{ backgroundColor: store.bg }}
+                className="h-36 relative flex items-center justify-center overflow-hidden"
+                style={{
+                  backgroundColor: store.bg,
+                  ...(store.image
+                    ? {
+                        backgroundImage: `url(${basePath}${store.image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }
+                    : {}),
+                }}
               >
-                <div className="text-center">
-                  <div className="text-white/40 text-xs font-medium uppercase tracking-widest mb-1">
+                {store.image && <div className="absolute inset-0 bg-black/45" />}
+                <div className="relative z-10 text-center">
+                  <div className="text-white/60 text-xs font-medium uppercase tracking-widest mb-1">
                     {store.type}
                   </div>
                   <div className="text-white font-bold text-2xl">{store.name}</div>
                 </div>
                 {/* Location badge */}
-                <div className="absolute top-3 right-3 bg-black/20 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full">
+                <div className="absolute top-3 right-3 bg-black/30 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full">
                   {store.location}
                 </div>
               </div>
