@@ -1,8 +1,8 @@
 const stats = [
-  { value: '20+', label: '위탁운영 매장', desc: '직영·위탁 포함 운영 경험' },
+  { value: '직영', label: '본사 플래그십', desc: '운영 시스템·메뉴 검증 완료' },
   { value: '4주', label: '안정화 기간', desc: '계약 후 운영 정상화까지' },
-  { value: '95%', label: '고객 만족도', desc: '위탁 운영 매장 오너 기준' },
-  { value: '30%', label: '평균 원가 절감', desc: '인수 후 3개월 내 기준' },
+  { value: '12개월', label: '기본 계약', desc: '위탁 후 가맹 전환 우선권' },
+  { value: '지역 독점', label: '상권 보호', desc: '동일 상권 중복 출점 없음' },
 ]
 
 export default function Stats() {
@@ -15,7 +15,7 @@ export default function Stats() {
               key={i}
               className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow"
             >
-              <div className="text-3xl sm:text-4xl font-bold text-[#C8865A] mb-1">
+              <div className="text-2xl sm:text-3xl font-bold text-[#C8865A] mb-1">
                 {stat.value}
               </div>
               <div className="text-[#1A1A1A] font-semibold text-sm sm:text-base mb-1">

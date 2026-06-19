@@ -122,15 +122,15 @@ export default function About() {
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#C8865A] font-bold w-12 flex-shrink-0">2023</span>
-                  <span className="text-white/80">브런치 카페 특화 위탁운영 시스템 개발</span>
+                  <span className="text-white/80">브런치 카페 특화 운영 시스템 개발</span>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-[#C8865A] font-bold w-12 flex-shrink-0">2024</span>
-                  <span className="text-white/80">AI 기반 운영 플랫폼 도입, 다점포 확장</span>
+                  <span className="text-white/80">본사 직영 플래그십 매장 운영 표준 정립</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="text-[#C8865A] font-bold w-12 flex-shrink-0">2025</span>
-                  <span className="text-white/80">CMP 운영 표준화 완성, 20+ 매장 운영</span>
+                  <span className="text-[#C8865A] font-bold w-12 flex-shrink-0">2026</span>
+                  <span className="text-white/80">위탁운영 파일럿 파트너 모집 개시</span>
                 </div>
               </div>
             </div>

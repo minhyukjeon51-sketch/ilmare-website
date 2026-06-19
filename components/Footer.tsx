@@ -48,24 +48,26 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-4">연락처</h4>
+            <h4 className="text-white font-semibold text-sm mb-4">파트너 상담 문의</h4>
             <div className="space-y-2 text-sm text-gray-400">
               <div>
-                <span className="text-[#C8865A]">T</span>{' '}
-                <a href="tel:010-0000-0000" className="hover:text-white transition-colors">
-                  010-0000-0000
+                <span className="text-[#C8865A]">📨</span>{' '}
+                <a href="#contact" className="hover:text-white transition-colors">
+                  상담 신청 폼
                 </a>
               </div>
               <div>
-                <span className="text-[#C8865A]">E</span>{' '}
-                <a href="mailto:contact@ilmare.co.kr" className="hover:text-white transition-colors">
-                  contact@ilmare.co.kr
+                <span className="text-[#C8865A]">✉️</span>{' '}
+                <a href="mailto:info@ilmare.co.kr" className="hover:text-white transition-colors">
+                  info@ilmare.co.kr
                 </a>
               </div>
+              <div>
+                <span className="text-[#C8865A]">📍</span>{' '}
+                <span>상담 시 안내드립니다</span>
+              </div>
               <div className="pt-1 text-xs text-gray-500">
-                평일 10:00–18:00
-                <br />
-                토요일 10:00–13:00
+                영업일 기준 24시간 이내 담당자가 연락드립니다.
               </div>
             </div>
           </div>

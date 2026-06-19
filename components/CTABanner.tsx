@@ -33,18 +33,18 @@ export default function CTABanner() {
             href="#contact"
             className="w-full sm:w-auto bg-white text-[#C8865A] font-bold px-10 py-4 rounded-full text-lg hover:bg-[#F5EDE0] transition-colors shadow-lg"
           >
-            무료 상담 신청하기
+            📨 무료 상담 신청하기
           </a>
           <a
-            href="tel:010-0000-0000"
+            href="mailto:info@ilmare.co.kr"
             className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
           >
-            📞 전화 상담
+            ✉️ info@ilmare.co.kr
           </a>
         </div>
 
         <p className="mt-6 text-white/40 text-sm">
-          평일 10:00–18:00 운영 · 토요일 오전 상담 가능
+          영업일 기준 24시간 이내 담당자가 연락드립니다.
         </p>
       </div>
 

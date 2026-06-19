@@ -6,6 +6,9 @@ import Services from '@/components/Services'
 import Process from '@/components/Process'
 import Portfolio from '@/components/Portfolio'
 import Testimonials from '@/components/Testimonials'
+import Investment from '@/components/Investment'
+import RevenueShare from '@/components/RevenueShare'
+import Exclusivity from '@/components/Exclusivity'
 import CTABanner from '@/components/CTABanner'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -23,6 +26,9 @@ export default function Home() {
         <Process />
         <Portfolio />
         <Testimonials />
+        <Investment />
+        <RevenueShare />
+        <Exclusivity />
         <CTABanner />
         <Contact />
       </main>

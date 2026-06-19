@@ -18,16 +18,10 @@ export default function MobileStickyCTA() {
     >
       <div className="bg-white border-t border-gray-200 px-4 py-3 pb-safe flex gap-3">
         <a
-          href="tel:010-0000-0000"
-          className="flex-1 bg-[#F5EDE0] text-[#C8865A] font-semibold py-3 rounded-xl text-sm text-center"
-        >
-          📞 전화 상담
-        </a>
-        <a
           href="#contact"
-          className="flex-[2] bg-[#C8865A] text-white font-bold py-3 px-6 rounded-xl text-sm text-center"
+          className="flex-1 bg-[#C8865A] text-white font-bold py-3 px-6 rounded-xl text-sm text-center shadow-md"
         >
-          무료 상담 신청
+          📨 무료 상담 신청
         </a>
       </div>
     </div>

@@ -1,24 +1,18 @@
-const testimonials = [
+const benefits = [
   {
-    quote:
-      '직접 주방에 서야 했던 제가 지금은 매장을 신경 쓰지 않아도 됩니다. 일마레가 인수하고 5주 만에 매출이 30% 늘었어요. 처음엔 반신반의했는데, 숫자가 증명해주더라고요.',
-    name: '김○○ 대표',
-    store: '브런치 카페 운영 (서울 마포구)',
-    rating: 5,
+    icon: '🌱',
+    title: '우선 파트너십',
+    desc: '브랜드 성장과 함께하는 첫 파트너에게 주어지는 기회입니다. 신규 브랜드의 초기 파트너만 누릴 수 있는 가치입니다.',
   },
   {
-    quote:
-      '원가가 40%를 넘어서 걱정이었는데, 일마레가 들어온 후 재고 체계가 완전히 바뀌었습니다. 지금은 25%대로 안정됐고, 주간 리포트로 수치를 직접 확인하고 있어요.',
-    name: '이○○ 사장',
-    store: '올데이 다이닝 운영 (경기 판교)',
-    rating: 5,
+    icon: '🏠',
+    title: '직영 노하우 100% 이관',
+    desc: '본사 직영 플래그십 매장에서 검증된 운영 노하우·메뉴·서비스를 그대로 이관해 드립니다.',
   },
   {
-    quote:
-      '직원 관리가 제일 힘들었는데, 일마레가 채용부터 교육까지 다 해줍니다. 헤드셰프도 일마레가 직접 뽑았고 지금은 주방이 돌아가는 게 느껴져요. 추천합니다.',
-    name: '박○○ 오너',
-    store: '카페 레스토랑 (서울 강남구)',
-    rating: 5,
+    icon: '🤝',
+    title: '의사결정 직접 참여',
+    desc: '브랜드 성장 단계 의사결정에 파트너 의견이 직접 반영됩니다. 본사와 함께 브랜드를 만들어 갑니다.',
   },
 ]
 
@@ -27,69 +21,69 @@ export default function Testimonials() {
     <section id="testimonials" className="py-24 bg-[#FAFAF7]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span className="text-[#C8865A] text-sm font-semibold uppercase tracking-widest">
-            Success Stories
+            Partnership Opportunity
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#1A1A1A]">
-            실제 오너들의 이야기
+          <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#1A1A1A] leading-tight">
+            일마레 파트너십,
+            <br />
+            <span className="text-[#C8865A]">신규 브랜드의 첫 파트너십 기회</span>
           </h2>
-          <p className="mt-4 text-gray-500 text-base sm:text-lg">
-            숫자로 증명된 위탁운영의 변화를 직접 들어보세요.
+          <p className="mt-5 text-gray-600 font-serif font-light text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            본사 직영 플래그십 매장 운영 중 — 운영 노하우·메뉴·서비스 검증 완료.
+            <br className="hidden sm:block" />
+            현재 위탁운영 파일럿 파트너를 모집하고 있습니다.
           </p>
         </div>
 
-        {/* Cards */}
+        {/* First-mover positioning banner */}
+        <div className="max-w-4xl mx-auto mb-12 bg-white rounded-3xl p-8 border-2 border-[#C8865A]/30 shadow-lg">
+          <div className="flex items-start gap-4">
+            <div className="text-3xl flex-shrink-0">🚀</div>
+            <div>
+              <div className="text-[#C8865A] text-xs font-bold uppercase tracking-widest mb-2">
+                First Mover Advantage
+              </div>
+              <h3 className="font-bold text-[#1A1A1A] text-xl mb-3">
+                신규 브랜드의 첫 파트너가 누리는 이점
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                일마레는 본사 직영 매장에서 운영 시스템을 완성한 후,
+                선별된 파일럿 파트너와 함께 브랜드를 확장합니다.
+                기존 프랜차이즈와는 다른 — <strong className="text-[#1A1A1A]">함께 만들어가는</strong> 파트너십 구조입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Benefits grid */}
         <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
+          {benefits.map((b, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col"
+              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
             >
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: t.rating }).map((_, j) => (
-                  <svg key={j} className="w-4 h-4 text-[#C8865A]" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-
-              {/* Quote */}
-              <blockquote className="text-gray-600 font-serif font-light text-sm leading-relaxed flex-1 mb-5">
-                &ldquo;{t.quote}&rdquo;
-              </blockquote>
-
-              {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                <div className="w-10 h-10 rounded-full bg-[#F5EDE0] flex items-center justify-center text-[#C8865A] font-bold text-sm">
-                  {t.name[0]}
-                </div>
-                <div>
-                  <div className="font-semibold text-[#1A1A1A] text-sm">{t.name}</div>
-                  <div className="text-gray-400 text-xs">{t.store}</div>
-                </div>
-              </div>
+              <div className="text-4xl mb-4">{b.icon}</div>
+              <h3 className="font-bold text-[#1A1A1A] text-lg mb-2">{b.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{b.desc}</p>
             </div>
           ))}
         </div>
 
-        {/* Result badges */}
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {[
-            { emoji: '📈', text: '평균 매출 +28%' },
-            { emoji: '💰', text: '원가율 -12%p' },
-            { emoji: '⭐', text: '리뷰 평점 +0.9' },
-            { emoji: '😌', text: '오너 업무 부담 -70%' },
-          ].map((badge, i) => (
-            <div
-              key={i}
-              className="bg-[#1A1A1A] rounded-xl px-4 py-4 text-center"
-            >
-              <div className="text-2xl mb-1">{badge.emoji}</div>
-              <div className="text-white font-semibold text-sm">{badge.text}</div>
-            </div>
-          ))}
+        {/* Honesty note */}
+        <div className="mt-12 max-w-3xl mx-auto bg-[#1A1A1A] rounded-2xl p-6 sm:p-8 text-center">
+          <div className="text-[#C8865A] text-xs font-bold uppercase tracking-widest mb-3">
+            우리의 약속
+          </div>
+          <p className="text-white text-base sm:text-lg font-serif font-light leading-relaxed">
+            아직 검증되지 않은 후기와 매장 수 대신,
+            <br />
+            <strong className="text-[#C8865A] font-bold">정직한 시작</strong>으로 신뢰를 쌓아갑니다.
+          </p>
+          <p className="mt-4 text-white/60 text-sm">
+            본사 직영 매장에서 검증된 시스템 · 투명한 운영 데이터 공유 · 함께 성장하는 파트너십
+          </p>
         </div>
       </div>
     </section>
